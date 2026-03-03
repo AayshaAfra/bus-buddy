@@ -18,7 +18,7 @@ export default function MainDashboard() {
 
   return (
     <div className="flex-1 flex flex-col min-h-screen bg-slate-50">
-      {/* Action bar */}
+    
       <div className="flex items-center gap-3 px-6 py-4">
         <button className="flex items-center gap-2 px-4 py-2.5 bg-teal-500 hover:bg-teal-600 text-white text-sm font-semibold rounded-xl shadow-md shadow-teal-200 transition-all duration-150 active:scale-95">
           <Plus size={16} />
@@ -26,11 +26,9 @@ export default function MainDashboard() {
         </button>
       </div>
 
-      {/* Stats row + right sidebar */}
+    
       <div className="flex gap-5 px-6 pb-5">
-        {/* Left: stats + map */}
         <div className="flex-1 min-w-0 flex flex-col gap-5">
-          {/* Stat cards */}
           <div className="flex gap-4">
             <StatCard
               title="Active Trips Now"
@@ -61,7 +59,6 @@ export default function MainDashboard() {
             />
           </div>
 
-          {/* Map */}
           <div className="bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden">
             <div className="flex items-center justify-between px-5 py-3 border-b border-slate-100">
               <h2 className="font-semibold text-slate-800 text-sm">Map Overview</h2>
@@ -94,7 +91,7 @@ export default function MainDashboard() {
           </div>
         </div>
 
-        {/* Right sidebar widgets */}
+        
         <div className="w-64 flex-shrink-0 flex flex-col gap-4">
           {/* Vehicle Maintenance Log */}
           <div className="bg-white rounded-2xl p-5 shadow-sm border border-slate-100">
@@ -119,7 +116,7 @@ export default function MainDashboard() {
             </button>
           </div>
 
-          {/* Recent Activity */}
+         
           <ActivityFeed />
         </div>
       </div>
