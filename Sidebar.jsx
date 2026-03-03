@@ -23,7 +23,7 @@ export default function Sidebar() {
       className="sidebar-scroll flex flex-col w-60 min-h-screen overflow-y-auto"
       style={{ background: '#1a2332' }}
     >
-      {/* Logo */}
+      
       <div className="flex items-center gap-3 px-5 py-5 border-b border-white/10">
         <div className="w-9 h-9 rounded-xl bg-teal-500 flex items-center justify-center flex-shrink-0">
           <Bus size={18} className="text-white" />
@@ -34,7 +34,7 @@ export default function Sidebar() {
         </div>
       </div>
 
-      {/* Nav */}
+      
       <nav className="flex-1 px-3 py-4 space-y-1">
         {navItems.map(({ icon: Icon, label }) => {
           const isActive = active === label;
@@ -55,7 +55,7 @@ export default function Sidebar() {
         })}
       </nav>
 
-      {/* Footer status */}
+      
       <div className="px-5 py-4 border-t border-white/10">
         <div className="flex items-center gap-2">
           <span className="relative flex h-2.5 w-2.5">
