@@ -28,7 +28,7 @@ export default function MapOverview() {
       attribution: '© OpenStreetMap contributors',
     }).addTo(mapInstance.current);
 
-    // Custom bus marker SVG
+    
     busMarkers.forEach((bus) => {
       const isAlert = bus.label.includes('Alert');
       const markerHtml = `
