@@ -93,7 +93,7 @@ export default function MainDashboard() {
 
         
         <div className="w-64 flex-shrink-0 flex flex-col gap-4">
-          {/* Vehicle Maintenance Log */}
+          
           <div className="bg-white rounded-2xl p-5 shadow-sm border border-slate-100">
             <h3 className="font-semibold text-slate-800 text-sm mb-4">Vehicle Maintenance log</h3>
             <div className="space-y-3">
